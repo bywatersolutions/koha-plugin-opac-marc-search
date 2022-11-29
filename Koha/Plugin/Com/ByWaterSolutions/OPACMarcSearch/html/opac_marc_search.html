@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col order-first order-md-first order-lg-2">
+        <fieldset class="marcSearch" style="display:none;" disabled="disabled">
+            <legend>MARC search</legend>
+            <a class="hide_marc_search" >Click to hide MARC search</a>
+            <p>You must specify a marc field, subfield, and value to search, incomplete rows will be ignored.</p>
+            <div class="advanced-search-terms extended">
+                <div class="marc-tag-row">
+                    <div class="search-field-input">
+                        <label for="marc_tag"> Field:</label>
+                        <input class="marc_tag noEnterSubmit" type="text" name="marc_tag" size="3" autofocus="">
+                        <label for="marc_subfield"> Subfield:</label>
+                        <input class="marc_subfield noEnterSubmit" type="text" name="marc_subfield" size="1" autofocus="">
+                        <label for="marc_value"> Content:</label>
+                        <input class="marc_value noEnterSubmit" type="text" name="marc_value" size="50" autofocus="">
+                        <a href="#" class="marcButtonPlus" title="Add another field">
+                            <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </a>
+                        <a style="display:none;" href="#" class="marcButtonMinus" title="Remove field">
+                            <i class="fa fa-minus-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <input id="marcSearch" class="btn btn-primary" accesskey="m" name="do" title="Search" value="Search">
+            </p>
+        </fieldset>
+    </div>
+</div>
